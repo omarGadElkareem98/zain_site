@@ -1,0 +1,9 @@
+﻿@font-face {
+    font-family: "Neo Sans Arabic Regular";
+    src: url("f6e895d8c1d12739e54a0ca9df6903d5.eot"); /* IE9*/
+    src: url("f6e895d8c1d12739e54a0ca9df6903d5d41d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("f6e895d8c1d12739e54a0ca9df6903d5.woff2") format("woff2"), /* chrome、firefox */
+    url("f6e895d8c1d12739e54a0ca9df6903d5.woff") format("woff"), /* chrome、firefox */
+    url("f6e895d8c1d12739e54a0ca9df6903d5.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("f6e895d8c1d12739e54a0ca9df6903d5.svg#Neo Sans Arabic Regular") format("svg"); /* iOS 4.1- */
+}

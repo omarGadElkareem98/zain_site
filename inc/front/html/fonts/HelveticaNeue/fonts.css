@@ -1,0 +1,13 @@
+@font-face
+{
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-weight: normal;
+    src: url(HelveticaNeueW23-Reg.woff) format("woff"), url("HelveticaNeueW23-Reg.ttf") format("truetype"), url("HelveticaNeueW23-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}
+@font-face
+{
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    src: url("HelveticaNeueW23-Bd.woff") format("woff"), url("HelveticaNeueW23-Bd.ttf") format("truetype"), url("HelveticaNeueW23-Bd.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}

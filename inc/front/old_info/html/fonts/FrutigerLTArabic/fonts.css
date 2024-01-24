@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "FrutigerLTArabic";
+    font-style: normal;
+    font-weight: bolder;
+    src: url("FrutigerLTArabic-75Black.woff") format("woff"), url("FrutigerLTArabic-75Black.ttf") format("truetype"), url("FrutigerLTArabic-75Black.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}
+@font-face {
+    font-family: "FrutigerLTArabic";
+    font-style: normal;
+    font-weight: bold;
+    src: url("FrutigerLTArabic-65Bold.woff") format("woff"), url("FrutigerLTArabic-65Bold.ttf") format("truetype"), url("FrutigerLTArabic-65Bold.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}
+
+
+@font-face {
+    font-family: "FrutigerLTArabic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("FrutigerLTArabic-55Roman.woff") format("woff"), url("FrutigerLTArabic-55Roman.ttf") format("truetype"), url("FrutigerLTArabic-55Roman.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}
+
+
+@font-face {
+    font-family: "FrutigerLTArabic";
+    font-style: normal;
+    font-weight: lighter;
+    src: url(FrutigerLTArabic-45Light.woff) format("woff"), url("FrutigerLTArabic-45Light.ttf") format("truetype"), url("FrutigerLTArabic-45Light.svg#HelveticaNeueLTArabic55Roman") format("svg");
+}
+

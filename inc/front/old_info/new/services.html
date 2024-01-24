@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" data-ng-app='app' data-ng-controller="ctrl" data-ng-init="changeLanguage('ar')">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ZAIN - &#x62A;&#x637;&#x628;&#x64A;&#x642; &#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x635;&#x64A;&#x627;&#x646;&#x629;
+	&#x627;&#x644;&#x645;&#x646;&#x632;&#x644; &amp; &#x648;&#x641;&#x646;&#x64A; 
+	&#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x637;&#x628;&#x64A;&#x642;.</title>
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="ZAIN APP" /> <!-- website name -->
+    <meta property="og:site" content="index.html" /> <!-- website link -->
+    <meta property="og:image" content="html/img/logo-color-1x.png" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="index.html" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194710966-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-194710966-1');
+    </script>
+
+
+    <!--favicon icon-->
+    <link rel="icon" href="html/img/promo-icon-bg.png" type="image/png" sizes="16x16">
+
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- angular translate -->
+<script src="ng/ng-Scripts/angular.min.js"></script>
+<script src="ng/ng-Scripts/angular-translate.js"></script>
+<script src="ng/ng-Scripts/angular-translate-loader-static-files.js"></script>
+<script src="ng/ng-Scripts/Translator/app.js"></script>
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&amp;display=swap"
+      rel="stylesheet">
+<link href="html/fonts/FrutigerLTArabic/fonts.css" rel="stylesheet" />
+<link href="html/fonts/DroidKufi/fonts.css" rel="stylesheet" />
+<link href="html/fonts/HelveticaNeue/fonts.css" rel="stylesheet" />
+<link href="html/fonts/NeoSansArabicRegular/fonts.css" rel="stylesheet" />
+<link href="html/fonts/yakout/FontArabic.css" rel="stylesheet" />
+<link href="html/fonts/Tajawal/styled751.css?ver=100" rel="stylesheet" />
+<!--Bootstrap css-->
+<link rel="stylesheet" href="html/css/bootstrap.min.css">
+<!--Magnific popup css-->
+<link rel="stylesheet" href="html/css/magnific-popup.css">
+<!--Themify icon css-->
+<link rel="stylesheet" href="html/css/themify-icons.css">
+<link rel="stylesheet" href="html/css.css">
+<!--animated css-->
+<link rel="stylesheet" href="html/css/animate.min.css">
+<!--ytplayer css-->
+<link rel="stylesheet" href="html/css/jquery.mb.YTPlayer.min.css">
+<!--Owl carousel css-->
+<link rel="stylesheet" href="html/css/owl.carousel.min.css">
+<link rel="stylesheet" href="html/css/owl.theme.default.min.css">
+<!--responsive css-->
+<link rel="stylesheet" href="html/css/SlideShow.css">
+<!--Portfoltio css-->
+<link rel="stylesheet" href="html/css/Portfoltio.css" />
+<link rel="stylesheet" type="text/css" href="cp/vendors/css/extensions/sweetalert2.min.css">
+
+
+<!--custom css-->
+    <link rel="stylesheet" href="html/css/aqua.css">
+<!--responsive css-->
+<link rel="stylesheet" href="html/css/responsive.css">
+<!--jQuery-->
+<script src="html/js/jquery-3.5.0.min.js"></script>
+<style>
+    .whatsapp_content {
+        position: fixed;
+        bottom: 30px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 99999999;
+    }
+
+        .whatsapp_content a.whatsapp_link {
+            font-size: 28px;
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            background-color: rgb(37, 211, 102);
+            border-radius: 50%;
+            direction: rtl;
+        }
+</style>
+
+    <!-- SEO Meta description -->
+    <meta name="keywords" content="&#x635;&#x64A;&#x627;&#x646;&#x629; &#x645;&#x646;&#x632;&#x644;&#x64A;&#x629;,&#x62A;&#x637;&#x628;&#x64A;&#x642; ZAIN,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x635;&#x64A;&#x627;&#x646;&#x629; &#x645;&#x646;&#x632;&#x644;&#x64A;&#x629;,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x645;&#x646;&#x632;&#x644;&#x64A;&#x629;,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x641;&#x646;&#x64A;,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x635;&#x64A;&#x627;&#x646;&#x629;,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x635;&#x64A;&#x627;&#x646;&#x629; &#x627;&#x644;&#x645;&#x646;&#x632;&#x644;,&#x62A;&#x637;&#x628;&#x64A;&#x642; &#x635;&#x64A;&#x627;&#x646;&#x629; &#x627;&#x644;&#x645;&#x646;&#x632;&#x644; &#x645;&#x646; ZAIN,&#x637;&#x627;&#x644;&#x628;&#x64A; &#x645;&#x646; &#x627;&#x644;&#x645;&#x646;&#x632;&#x644;,&#x633;&#x647;&#x648;&#x644;&#x629; &#x627;&#x644;&#x648;&#x635;&#x648;&#x644; &#x625;&#x644;&#x649; &#x627;&#x644;&#x641;&#x646;&#x64A; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x637;&#x628;&#x64A;&#x642;">
+    <meta name="description" content="&#x645;&#x639; ZAIN &#x60C; &#x64A;&#x645;&#x643;&#x646; &#x644;&#x623;&#x635;&#x62D;&#x627;&#x628; &#x627;&#x644;&#x645;&#x646;&#x627;&#x632;&#x644; (&#x637;&#x627;&#x644;&#x628;&#x64A; &#x627;&#x644;&#x62E;&#x62F;&#x645;&#x629;) &#x648;&#x627;&#x644;&#x641;&#x646;&#x64A;&#x64A;&#x646; &#x628;&#x645;&#x62E;&#x62A;&#x644;&#x641; &#x62A;&#x62E;&#x635;&#x635;&#x627;&#x62A;&#x647;&#x645; &#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; ZAIN &#x60C; &#x648;&#x645;&#x646; &#x62B;&#x645; &#x625;&#x646;&#x62C;&#x627;&#x632; &#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x647;&#x645; &#x641;&#x64A; &#x627;&#x644;&#x648;&#x642;&#x62A; &#x627;&#x644;&#x645;&#x62D;&#x62F;&#x62F; &#x648;&#x628;&#x645;&#x633;&#x62A;&#x648;&#x649; &#x639;&#x627;&#x644;&#x64D; &#x645;&#x646; &#x627;&#x644;&#x62C;&#x648;&#x62F;&#x629; &#x60C; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627; &#x627;&#x644;&#x645;&#x648;&#x62B;&#x648;&#x642; &#x628;&#x647;.">
+    <meta property="og:title" content="ZAIN - &#x62A;&#x637;&#x628;&#x64A;&#x642; &#x62E;&#x62F;&#x645;&#x627;&#x62A; &#x635;&#x64A;&#x627;&#x646;&#x629; &#x627;&#x644;&#x645;&#x646;&#x632;&#x644; &amp; &#x648;&#x641;&#x646;&#x64A; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; &#x627;&#x644;&#x62A;&#x637;&#x628;&#x64A;&#x642;." />
+    <meta property="og:description" content="&#x645;&#x639; ZAIN &#x60C; &#x64A;&#x645;&#x643;&#x646; &#x644;&#x623;&#x635;&#x62D;&#x627;&#x628; &#x627;&#x644;&#x645;&#x646;&#x627;&#x632;&#x644; (&#x637;&#x627;&#x644;&#x628;&#x64A; &#x627;&#x644;&#x62E;&#x62F;&#x645;&#x629;) &#x648;&#x627;&#x644;&#x641;&#x646;&#x64A;&#x64A;&#x646; &#x628;&#x645;&#x62E;&#x62A;&#x644;&#x641; &#x62A;&#x62E;&#x635;&#x635;&#x627;&#x62A;&#x647;&#x645; &#x627;&#x644;&#x627;&#x62A;&#x635;&#x627;&#x644; &#x639;&#x628;&#x631; &#x627;&#x644;&#x625;&#x646;&#x62A;&#x631;&#x646;&#x62A; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; ZAIN &#x60C; &#x648;&#x645;&#x646; &#x62B;&#x645; &#x625;&#x646;&#x62C;&#x627;&#x632; &#x62E;&#x62F;&#x645;&#x627;&#x62A;&#x647;&#x645; &#x641;&#x64A; &#x627;&#x644;&#x648;&#x642;&#x62A; &#x627;&#x644;&#x645;&#x62D;&#x62F;&#x62F; &#x648;&#x628;&#x645;&#x633;&#x62A;&#x648;&#x649; &#x639;&#x627;&#x644;&#x64D; &#x645;&#x646; &#x627;&#x644;&#x62C;&#x648;&#x62F;&#x629; &#x60C; &#x645;&#x646; &#x62E;&#x644;&#x627;&#x644; &#x62A;&#x637;&#x628;&#x64A;&#x642;&#x646;&#x627; &#x627;&#x644;&#x645;&#x648;&#x62B;&#x648;&#x642; &#x628;&#x647;." />
+    <meta name="author" content="ZAIN APP">
+
+
+    <link href="index.html" rel="canonical" />
+    <meta name="google-site-verification" content="cMRUMc6Cq5s9-8UO9ibUBixuGJ3QsUCxxTcKIbAJVtc" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VXXYF79Q0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-230808404-1');
+    </script>
+
+
+    <!--Start of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+    <link href="index.html" rel="canonical" />
+    <meta name="google-site-verification" content="cMRUMc6Cq5s9-8UO9ibUBixuGJ3QsUCxxTcKIbAJVtc" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VXXYF79Q0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-230808404-1');
+    </script>
+</head>
+<body>
+        <header class="header">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="html/img/logo-color-1x.png" width="40" alt="logo"
+                     class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">⌂ الرئيسية</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link page-scroll" href="#Fields">❆ خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#Feature">✩ ما يميزنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#about">≛ عن التطبيق</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#screenshots">▨ صور</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#customer">☺ عملائنا</a>
+                    </li>
+					
+                        
+                       
+					
+					<li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">☎ تواصل معنا</a>
+                    </li>
+					<ul class="submenu">
+					<li class="nav-item">
+                       <a href="mailto:info@zaindev.com"><span class="ti-email mr-2"></span></a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link page-scroll" href="mailto:info@zaindev.com"><span class="ti-twitter mr-2"></span></a>
+                    </li>
+					<li class="nav-item">
+                        <a href="https://www.facebook.com/zaindevsa" target="_blan"> <span class="ti-facebook mr-2"></span> </a>
+                    </li>
+					<li class="nav-item">
+                        <a href="https://www.instagram.com/zaindevsa" target="_blan"><span class="ti-instagram mr-2"></span> </a>
+                    </li>
+					</ul>
+
+					</ul>
+
+            </div>
+        </div>
+    </nav>
+	
+    <!--end navbar-->
+</header>
+    <!--body content wrap start-->
+    <section class="hero-section ptb-100 background-img"
+             style="background: url('html/img/videoFrame.jpg')no-repeat center center / cover">
+        <div class="container">
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-9 col-lg-7">
+                    <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0"><br>
+                        <h1 class="text-white mb-0">خدمات الصيانة </h1>               
+                      <br>
+                     <p class="text-white wow fadeInRight" data-wow-duration="2.0s">
+                       سهولة طلب الخدمة والوصول إلى الفني مع جودة الخدمة المقدمة
+                    </p>
+					<p class="lead wow fadeInRight" data-wow-duration="2.0s">
+                       يمكنك تحميل التطبيق
+                    </p>
+                    
+                      <div class="download-btn">
+                         <a href="https://play.google.com/"
+                           target="_blank"
+                           class="btn btn-app-icon wow fadeInUp" data-wow-duration="2.0s">
+                            <img class="app-icon" src="StaticFiles/gp.png" alt="" />
+                        </a>
+						<a href="https://apps.apple.com/"
+                           target="_blank"
+                           class="btn btn-app-icon wow fadeInUp" data-wow-duration="2.0s">
+                            <img class="app-icon" src="StaticFiles/ap.png" alt="" />
+                        </a>
+				</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+
+<section id="Fields" class="promo-section ptb-70">
+	
+    <div class="container">
+	
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-10">
+			
+                 <div class="section-heading mb-5"><br><br>
+				 
+                    <span class="badge badge-primary badge-pill">❉ خدماتنا ❉</span>
+					<span class="badge badge-primary badge-pill">✰✰✰✰✰</span>
+                    <br><br><h4 class="text wow fadeInRight">
+                        يغطى التطبيق خدماتنا التالية فى مجال الصيانة المنزلية
+                    </h4>
+               
+            </div>
+            </div>
+        </div> 
+		</div></div> 
+		
+							</div>
+							
+	  <div class="row">
+            <div class="col-md-12">
+                <ul class="portfolio_container gutter_small work_col4 portfolio_gallery portfolio_style2 wow fadeInUp" data-wow-duration="2s">
+                      
+               	
+                        <div class="screen-slider-content mt-5">
+                        <div class="screen-carousel owl-carousel owl-theme dot-indicator"> 
+			
+						<li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+							
+                     
+                                <img src="StaticFiles/conditioning.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />  
+                                <p class="img-title">
+                                    صيانة المكيفات
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1"><a href="services.html#Fields">
+                                            <img src="StaticFiles/conditioning.svg" alt="" /></a>
+                                            <h6>❉مكيف❉أجهزة منزلية❉نظافة عامة❉</h6>
+                                        </div>
+                                    </div>
+                                </div>
+								 <div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                       <a href="services.html#Fields">
+                        <button class="btn btn-primary">عرض الكل</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+						
+						
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/General-Contracting.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    المقاولات العامة
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/Plaster.svg" alt="" /></a>
+                                            <p>❉ المقاولات العامة ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div>
+                            </div>
+                        </li>
+						
+						
+						<li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/security-camera.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    كاميرات المراقبة
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                       <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/camera.png" alt="" /></a>
+                                            <p>❉ كاميرات المراقبة ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div>
+                            </div>
+                        </li>
+						
+						
+						
+						<li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/best-interior-design.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    تصميم داخلي وديكور
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <<!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/Interior.png" alt="" /></a>
+                                            <p>❉ تصميم داخلي وديكور ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                          <!--<a href="s3.html#Fields">-->
+						  <a href="https://wa.me/966547302222">
+                        <button class="btn btn-primary">أطلب الخدمة</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+						
+						
+						<li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/ElectricityPlumbing.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    أعمال السباكة والكهرباء
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                       <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="StaticFiles/Plumbing.svg" alt="" />
+											 <img src="StaticFiles/Electricity.svg" alt="" />
+											</a>
+                                            <p>❉ أعمال السباكة والكهرباء ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+									<div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                          <!--<a href="s3.html#Fields">-->
+						  <a href="https://wa.me/966547302222">
+                        <button class="btn btn-primary">أطلب الخدمة</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+
+						
+
+                       <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/Plaster.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    الإنشاءات والبناء
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                       <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/Plaster.svg" alt="" /></a>
+                                            <p>❉ الإنشاءات والبناء ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+									<div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                          <!--<a href="s3.html#Fields">-->
+						  <a href="https://wa.me/966547302222">
+                        <button class="btn btn-primary">أطلب الخدمة</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+						
+							
+							 <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/close-up-set-torx.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    العدد اليدوية وقطع الغيار
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/Hand.png" alt="" /></a>
+                                            <p>❉ العدد اليدوية وقطع الغيار ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+									<div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                          <!--<a href="s3.html#Fields">-->
+						  <a href="https://wa.me/966547302222">
+                        <button class="btn btn-primary">أطلب الخدمة</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+						
+						<li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="./StaticFiles/Aluminum-and-glass-works.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots" alt="image" />
+                                <p class="img-title">
+                                    أعمال الألمنيوم والزجاج
+                                </p>
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <!--<div class="back-color-1"><a href="services.html#Fields">-->
+										<div class="back-color-1"><a href="#Fields">
+                                            <img src="./StaticFiles/Aluminum.png" alt="" /></a>
+                                            <p>❉ أعمال الألمنيوم والزجاج ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+									<div class="row">
+                        <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around">
+                          <!--<a href="s3.html#Fields">-->
+						  <a href="https://wa.me/966547302222">
+                        <button class="btn btn-primary">أطلب الخدمة</button></a>
+                    </div>	
+                        </div>
+                    </div>
+                            </div>
+                        </li>
+                        </li>
+						</div>
+                            </div>
+							
+							
+            </div>
+        </div>
+    </div>
+	<br><br><br>
+	<hr>
+</section>
+
+
+<!--صيانة المكيفات-->
+
+<section id="Fields1" class="about-us ptb-100 gray-light-bg">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-10">
+			 <div class="section-heading mb-5">
+			 <span class="badge badge-primary badge-pill">❉ خدمات الصيانة ❉</span>			
+                    <br><br><h4 class="text wow fadeInRight">
+                       يمكنك تصفح جميع خدماتنا
+                    </h4>				 
+                </div>
+            </div>
+                
+        </div>
+		
+        
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="portfolio_container gutter_small work_col4 portfolio_gallery portfolio_style2 wow fadeInUp" data-wow-duration="2s">
+                      
+
+						 <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">       
+                                <img src="StaticFiles/conditioning.png" alt="image">
+                                <p class="img-title">
+                                     صيانة المكيفات
+                                </p>
+								
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ تصفح كل خدماتنا ❉</p>
+                                        </div>
+                                    </div>
+                                </div>
+								 
+                            </div>
+                        </li>
+
+
+                            <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/18.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p> ❉ تركيب مكيف شباك ❉</p>
+											<h6>يوجد عقود<br>50.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+						  <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">تركيب مكيف شباك</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">70.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/13.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ تركيب مكيف سبليت ❉</p>
+											<h6>العقود على حسب مكان التركيب</h6>
+											
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">تركيب مكيف سبليت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">250.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/15.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p> ❉ تركيب مكيف كاسيت ❉</p>
+											<h6>يوجد عقود<br>360.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">تركيب مكيف كاسيت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">420.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						 
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/14.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p> ❉ تركيب مكيف دولابي ❉</p>
+											<h6>يوجد عقود<br>450.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4"> تركيب مكيف دولابي</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">450.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  <!--الاصلاح وتغيير القطع-->
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير قطع كاباسيتور-كونتاكتور❉</h6>
+											<h6>يوجد عقود<br>60.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح كاباسيتور-كونتاكتور</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">80.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير قطع كومبريسور❉</h6>
+											<h6>يوجد عقود<br>298.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح كومبريسور</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">350.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير قطع مروحة داخلية❉</h6>
+											<h6>يوجد عقود<br>180.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">اصلاح مروحة داخلية</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">180.00 SR<br>180.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير قطع مروحة خارجية❉</h6>
+											<h6>يوجد عقود<br>130.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح مروحة خارجية</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير لحام❉</h6>
+											<h6>العقود على حسب نوع اللحام</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح وتغيير لحام</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">100.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح وتغيير دائرة كهربائية❉</h6>
+											<h6>العقود على حسب تشخييص الفني</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح الدئرة الكهربائية</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ أصلاح الصرف والتسليك❉</h6>
+											<h6>العقود على حسب تشخييص الفني</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">أصلاح الصرف والتسليك</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">100.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ شحن فريون ( R22 - add )❉</h6>
+											<h6>يوجد عقود <br>90.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">شحن فريون ( R22 - add )</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">100.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ شحن فريون ( R22 - Full )❉</h6>
+											<h6>يوجد عقود <br>130.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">شحن فريون ( R22 - Full )</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ شحن فريون ( R410 - add )❉</h6>
+											<h6>يوجد عقود <br>150.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">شحن فريون( R410 - add )</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">180.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/1.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ شحن فريون ( R410 - Full )❉</h6>
+											<h6>يوجد عقود <br>180.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">شحن فريون ( R410 - Full )</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">210.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  
+						  
+						  <!--غسيل-->
+						  
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/5.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف شباك مع الفك ❉</h6>
+											<h6>يوجد عقود <br>70.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف شباك  + فك</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">70.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						 						  
+						 <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/4.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف سبليت فقط ❉</h6>
+											<h6>يوجد عقود <br>150.00 SR</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف سبليت فقط </h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary" >أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/2.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف دولابى ❉</h6><br>
+											 <h6>يوجد عقود <br>180.00 SR</h6>
+									
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف دولابى فقط</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">250.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+
+
+
+                             <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/19.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف كاسيت بدون فك ❉</h6><br>
+											 <h6>يوجد عقود <br>180.00 SR</h6>
+									
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف كاسيت فقط</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">250.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+
+
+                            <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/20.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف كونسيلد بدون فك ❉</h6><br>
+											 <h6>يوجد عقود <br>220.00 SR</h6>
+									
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف كونسيلد فقط</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">250.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/20.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <h6>❉ غسيل مكيف باكج بدون فك ❉</h6><br>
+											 <h6>يوجد عقود <br>220.00 SR</h6>
+									
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">غسيل مكيف باكج بدون فك</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">250.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+						  
+						  <!-- <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/8.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فحص مكيف سبليت ❉</p><br>
+											<h6>خدمة فحص المكيف الاسبلت تشمل فحص المكيف بشكل كامل فحص الدائرة الكهربائية فحص الدائرة الميكانيكة للمكيف وتحديد كفائة الكمبرسر قياس ضغط الفريون وتحديد العطل و تقديم تسعير بتكلفة الاصلاح مع قطع الغيار ان وجد</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فحص مكيف سبليت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/9.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فحص مكيف دولابى ❉</p>
+											<h6>خدمة فحص المكيف الدولابي تشمل فحص المكيف بشكل كامل فحص الدائرة الكهربائية فحص الدائرة الميكانيكة للمكيف وتحديد كفائة الكمبرسر قياس ضغط الفريون وتحديد العطل و تقديم تسعير بتكلفة الاصلاح مع قطع الغيار ان وجد</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فحص مكيف دولابى</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/10.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فحص مكيف كاسيت ❉</p>
+											<h6>خدمة فحص المكيف الكاسيت تشمل فحص المكيف بشكل كامل فحص الدائرة الكهربائية فحص الدائرة الميكانيكة للمكيف وتحديد كفائة الكمبرسر قياس ضغط الفريون وتحديد العطل و تقديم تسعير بتكلفة الاصلاح مع قطع الغيار ان وجد</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فحص مكيف كاسيت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/11.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فحص مكيف كونسيلد ❉</p>
+											<h6>خدمة فحص المكيف الكونسيلد تشمل فحص المكيف بشكل كامل فحص الدائرة الكهربائية فحص الدائرة الميكانيكة للمكيف وتحديد كفائة الكمبرسر قياس ضغط الفريون وتحديد العطل و تقديم تسعير بتكلفة الاصلاح مع قطع الغيار ان وجد</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فحص مكيف كونسيلد</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/12.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فحص مكييف مركزى ❉</p>
+											<h6>خدمة فحص المكيف المركزي تشمل فحص المكيف بشكل كامل فحص الدائرة الكهربائية فحص الدائرة الميكانيكة للمكيف وتحديد كفائة الكمبرسر قياس ضغط الفريون فحص السيور وتحديد العطل و تقديم تسعير بتكلفة الاصلاح مع قطع الغيار ان وجد</h6>
+                                        </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فحص مكييف مركزى</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">150.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/15.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فك مكيف كاسيت ❉</p>
+							       </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فك مكيف كاسيت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">350.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/16.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فك واعاده تركيب مكيف سبليت ❉</p>
+							       </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فك واعاده تركيب مكيف سبليت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">300.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						   <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/17.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فك واعاده تركيب مكيف سبليت ❉</p>
+							       </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فك واعاده تركيب مكيف كاسيت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">650.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/13.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فك مكيف سبليت ❉</p>
+							       </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فك مكيف سبليت</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">200.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>
+						  
+						  
+						  <li class="portfolio-item design web">
+                            <div class="portfolio_item wow zoomIn" data-wow-duration="2s">
+                                <img src="StaticFiles/service/14.png" alt="image">
+                               
+                                <div class="portfolio_content">
+                                    <div class="icon icon-shape icon-color-1 cover">
+                                        <div class="back-color-1">
+                                            <img src="StaticFiles/conditioning.svg" alt="" />
+                                            <p>❉ فك مكيف دولابى ❉</p>
+							       </div>
+                                    </div>			
+                                </div>
+								
+						 <div class="row">
+                         <div class="col-sm-12 mt-3">
+						 <div class="mb-5 d-flex justify-content-around"><hr> <h4 class="mt-4">فك مكيف دولابى</h4><hr></div></div></div>
+                         <div class="mb-5 d-flex justify-content-around"><h6 class="mb-4 lh-190">350.00 SR</h6> </div>
+	                   
+					   <div class="row">
+                        <div class="col-sm-12 mt-1">
+						 <div class="mb-5 d-flex justify-content-around">
+                        <a href="https://wa.me/966547302222"> <button class="btn btn-primary">أطلب الخدمة</button></a>
+                         </div></div></div> </div>
+						  </li>-->
+						  
+						 
+						  
+						  
+					</div> </div>
+
+
+
+					
+</ul>
+	
+							     </div>
+        </div>
+    </div>
+<hr>
+<hr>
+</section>
+
+
+
+
+
+
+        
+		
+		<section id="customer" class="screenshots-section ptb-100 gray-light-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-heading text-center">
+                    <h2>▄▄ عملائنا ▄▄<br></h2>
+                    <p class="lead">
+                        تصفح قائمة عملائنا
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--start app screen carousel-->
+        <div class="screen-slider-content mt-5">
+            <div class="screen-carousel owl-carousel owl-theme dot-indicator">
+                 <img src="StaticFiles/04/1.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+				<img src="StaticFiles/04/2.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/3.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/4.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/5.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/6.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/7.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+				<img src="StaticFiles/04/8.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+                <img src="StaticFiles/04/9.png" class="img-fluid wow fadeIn" data-wow-duration="1.0s" alt="screenshots">
+            </div>
+        </div>
+        <!--end app screen carousel-->
+
+    </div>
+</section>
+
+
+
+
+  
+					
+
+
+
+		
+<section id="download" class="download-section pt-100 background-img"
+         style="background: url('StaticFiles/app-hero-bg.jpg')no-repeat center center / cover; overflow: hidden;">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-7">
+                <div class="download-content text-white pb-100 wow fadeIn" data-wow-duration="3.0s">
+                    <h2 class="text-white">
+                      █ حمل التطبيق على جوالك  
+                    </h2>
+                    <ul class="lead DownloadItem"> 
+					<li>◉ أنشئ حسابك وحدد موقعك على الخريطة . </li><br>
+					<li>◉ اختر الخدمة المطلوبة . </li> <br>
+					<li>◉ استعرض الفنيين .</li> <br>
+					<!--<li> اختر (الآن) إن كنت تريد الفني في نفس الوقت ، أو اختر (لاحقاً) إن كنت تريد الفني في وقت لاحق ، وهنا يمكنك تحديد التاريخ والوقت . </li>-->
+					<li>◉ أكد طلبك عن طريق التواصل معنا على أحد الأرقام المتواجدة . </li>
+					<li>◉ سيتم الرد عليك في بأسرع وقت .</li>
+					<li>◉ في حالة تمت الموافقة على طلبك سيتم البدء بمباشرة العمل, بحسب المتفق عليه من الطرفين . </li> 
+					</ul>
+                    <br />
+                    <div class="download-btn">                      
+                        <a href="https://play.google.com/"
+                           target="_blank"
+                           class="btn btn-app-icon wow fadeInUp" data-wow-duration="2.0s">
+                            <img class="app-icon" src="StaticFiles/gp.png" alt="" />
+                        </a>
+						<a href="https://apps.apple.com/"
+                           target="_blank"
+                           class="btn btn-app-icon wow fadeInUp" data-wow-duration="2.0s">
+                            <img class="app-icon" src="StaticFiles/ap.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="download-img d-flex align-items-end wow fadeIn" data-wow-duration="2.0s">
+                    <img src="StaticFiles/app-hand-top.png" alt="download" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       <section id="contact" class="contact-us ptb-100 gray-light-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-3 message-box d-none">
+                <div class="alert alert-danger"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="section-heading wow fadeInDown" data-wow-duration="2.0s">
+                    <h3>▄▄ تواصل معنا ▄▄</h3>
+                    <p style="text-align:justify;">
+                        تطبيق ZAIN هو تطبيق إلكتروني لتقديم خدمة صيانة المكيفات والأجهزة المنزليَّة ، وهي تربط بين صاحب المنزل (طالب الخدمة) والفنّيين بمختلف تخصصاتهم أون لاين (Online) ، وذلك عند رغبة صاحب المؤسسة أو المنزل بطلب خدمة صيانة، حيث يتيح التطبيق فرصة التواصل مع الفنّيين المختصِّين بالصيانة ██████████▒▒▒▒▒▒▒▒▒▒▒▒
+                    </p>
+                </div>
+                <div class="footer-address wow fadeInUp" data-wow-duration="2.5s">
+                    <ul class="list-unstyled support-list contact-list">
+                        <li class="mb-2 d-flex align-items-center">
+						 <a class="dir-ltr" href="https://www.google.com/maps/place/%D9%85%D8%A4%D8%B3%D8%B3%D8%A9+%D8%B2%D9%8A%D9%86+%D8%A7%D9%84%D8%AA%D9%86%D9%85%D9%88%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@25.3887337,49.549367,16.75z/data=!4m14!1m7!3m6!1s0x3e3797005eeca08b:0x3529411510ba2bda!2z2YXYpNiz2LPYqSDYstmK2YYg2KfZhNiq2YbZhdmI2YrYqSDYp9mE2KrYrNin2LHZitip!8m2!3d25.3884144!4d49.5463553!16s%2Fg%2F11f9w3gfnx!3m5!1s0x3e3797005eeca08b:0x3529411510ba2bda!8m2!3d25.3884144!4d49.5463553!16s%2Fg%2F11f9w3gfnx?hl=ar&entry=ttu" target="_blan">
+                            <span class="ti-map-alt mr-2"></span>
+                        المملكة العربية السعودية - منطقة الأحساء - مدينة المبرز  
+						</a>
+						
+						</li>
+                     
+						
+						    <li class="mb-2 d-flex align-items-center">
+							 <span class="ti-email mr-2"></span>
+			  <a class="dir-ltr" href="mailto:info@zaindev.com" class="tooltip" title="info@zaindev.com">
+			  	  <span class="" data-cfemail=""><h6>info@zaindev.com</h6></span>
+			    <span>
+			      		       </span>
+			  </a>
+			</li>
+			
+                        <li class="mb-2 d-flex align-items-center">
+                            <span class="ti-twitter mr-2"></span><a class="dir-ltr" href="https://twitter.com/zaindevsa" target="_blan">
+                                <h6>ZAINDEVSA</h6>
+                            </a>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <span class="ti-facebook mr-2"></span><a class="dir-ltr" href="https://www.facebook.com/zaindevsa" target="_blan">
+                                <h6>ZAINDEVSA</h6>
+                            </a>
+                        </li>
+						 <li class="mb-2 d-flex align-items-center">
+                            <span class="ti-instagram mr-2"></span><a class="dir-ltr" href="https://www.instagram.com/zaindevsa" target="_blan">
+                                <h6>ZAINDEVSA</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div id="CorrectAction" class="CorrectAction" style="display:none;">
+                    <img src="html/img/correct.png" alt="Alternate Text" />
+                    <h3 id="ContactUsCorrect">{{'ContactUsCorrect' | translate}}</h3>
+                </div>
+                <div id="WrongAction" class="WrongAction" style="display:none;">
+                    <img src="html/img/cancel.png" alt="Alternate Text" />
+                    <h3 id="ContactUsWrong">
+                        {{'ContactUsWrong' | translate}}
+                        <br />
+                    </h3>
+                </div>
+                <form method="POST" id="gcontactForm" class="contact-us-form wow fadeIn" data-wow-duration="2.0s" novalidate="novalidate" action="">
+                    <h5>
+                        ░▒▓█  الوصول إلينا بسرعة  █▓▒░
+                    </h5>
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control contact-item" placeholder="" translate translate-attr-placeholder="FullName" required="required" data-val="true" data-val-regex="&#x627;&#x644;&#x625;&#x633;&#x645; &#x643;&#x627;&#x645;&#x644;&#x627; &#x64A;&#x62C;&#x628; &#x627;&#x646; &#x64A;&#x62A;&#x636;&#x645;&#x646; &#x62D;&#x631;&#x648;&#x641; &#x641;&#x642;&#x637;" data-val-regex-pattern="^[&#x600;-&#x65F;&#x66A;-&#x6EF;&#x6FA;-&#x6FF; A-Za-z]*$" data-val-required="&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x627;&#x644;&#x625;&#x633;&#x645; &#x643;&#x627;&#x645;&#x644;&#x627; &#x645;&#x637;&#x644;&#x648;&#x628;&#x647;" id="ContactUs_FullName" name="ContactUs.FullName" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ContactUs.FullName" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control contact-item" placeholder="" translate translate-attr-placeholder="Email" required="required" data-val="true" data-val-email="&#x627;&#x644;&#x628;&#x631;&#x64A;&#x62F; &#x627;&#x644;&#x627;&#x644;&#x643;&#x62A;&#x631;&#x648;&#x646;&#x64A; &#x63A;&#x64A;&#x631; &#x635;&#x627;&#x644;&#x62D;" data-val-required="&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x631;&#x64A;&#x62F; &#x627;&#x644;&#x625;&#x644;&#x643;&#x62A;&#x631;&#x648;&#x646;&#x649; &#x645;&#x637;&#x644;&#x648;&#x628;&#x647;" id="ContactUs_Email" name="ContactUs.Email" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ContactUs.Email" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control contact-item" placeholder="" translate translate-attr-placeholder="Phone" data-val="true" data-val-required="&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x631;&#x642;&#x645; &#x627;&#x644;&#x645;&#x62D;&#x645;&#x648;&#x644; &#x645;&#x637;&#x644;&#x648;&#x628;&#x647;" id="ContactUs_MobileNo" name="ContactUs.MobileNo" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ContactUs.MobileNo" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <input type="text" size="40" class="form-control" placeholder="" translate translate-attr-placeholder="Subject" data-val="true" data-val-required="&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x639;&#x646;&#x648;&#x627;&#x646; &#x627;&#x644;&#x631;&#x633;&#x627;&#x644;&#x629; &#x645;&#x637;&#x644;&#x648;&#x628;&#x647;" id="ContactUs_Subject" name="ContactUs.Subject" value="">
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ContactUs.Subject" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control contact-item" rows="7" cols="25" placeholder="" translate translate-attr-placeholder="Message" data-val="true" data-val-required="&#x628;&#x64A;&#x627;&#x646;&#x627;&#x62A; &#x646;&#x635; &#x627;&#x644;&#x631;&#x633;&#x627;&#x644;&#x629; &#x645;&#x637;&#x644;&#x648;&#x628;&#x647;" id="ContactUs_Message" name="ContactUs.Message">
+</textarea>
+                                <span class="text-danger field-validation-valid" data-valmsg-for="ContactUs.Message" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 mt-3">
+						
+						 <div class="mb-5 d-flex justify-content-around">
+                       <a href="index.html">
+                        <button class="btn btn-primary">أرســل رسالتك</button></a>
+                    </div>	
+                        </div>
+                    </div>
+            		</form>
+                <p class="form-message"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+<footer id="footer" class="footer-section">
+    <!--footer copyright start-->
+    <div class="footer-bottom light-bg pt-4 pb-4">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-md-6 col-lg-5">
+				
+		<div class="mb-5 d-flex justify-content-around">
+                       <a href="#.html">
+                        <button class="btn solid-btn">سياسة الخصوصية</button></a>
+                       <a href="#.html">
+                        <button class="btn solid-btn">الشروط والأحكام</button></a>
+                    </div>
+					
+					
+                
+				<li class="mb-4 d-flex justify-content-center">
+							 
+			
+			              <a class="dir-ltr" href="mailto:info@zaindev.com"><span class="ti-email mr-2"></span>
+                              
+                            </a>
+                          
+                            <a class="dir-ltr" href="https://twitter.com/zaindevsa" target="_blan"><span class="ti-twitter mr-2"></span>
+                              
+                            </a>
+                         
+                           <a class="dir-ltr" href="https://www.facebook.com/zaindevsa" target="_blan"> <span class="ti-facebook mr-2"></span>
+                                
+                            </a>
+                          
+                            <a class="dir-ltr" href="https://www.instagram.com/zaindevsa" target="_blan"><span class="ti-instagram mr-2"></span>
+                                
+                            </a>
+                        </li>
+             <div class="mb-5 d-flex justify-content-center">
+                      
+                      <!--<a href="index.html">
+                      <button class="btn solid-btn">© كــل الحقوق | محفوظة لمؤسسة زيـــنلك التنموية - 2023</button></a>-->
+					 
+                    </div>
+               
+                </div>
+				
+            </div>
+                 <a class="mb-10 d-flex justify-content-center" href="index.html">
+                     <h6> © كــل الحقوق | محفوظة لمؤسسة زيـــنلك التنموية - 2023 </h6></a>
+					  <!--<a class="mb-10 d-flex justify-content-center" href="index.html">
+                      <button class="btn solid-btn">© كــل الحقوق | محفوظة لمؤسسة زيـــنلك التنموية - 2023</button></a>-->
+        </div>
+    </div>
+    <!--footer copyright end-->
+</footer>
+<div class="ht-ctc-chat style-7 desktop whatsapp_content">
+    <a title="" class="icon icon-whatsapp whatsapp_link" id="s7-icon" target="_blank" onmouseover="this.style.color = '#455a64', this.style.backgroundColor = '#25D366' " 
+	onmouseout="this.style.color = '#ffffff', this.style.backgroundColor = '#25D366' " href="https://wa.me/966547302222">
+        <img src="html/img/whatsapp2.png" style="margin-top: 0;width: 28px;height: 28px;filter: invert(98%) sepia(1%) saturate(1%) hue-rotate(189deg) brightness(200%) contrast(99%);">
+    </a>
+</div>
+    <!--Popper js-->
+<script src="html/js/popper.min.js"></script>
+<!--Bootstrap js-->
+<script src="html/js/bootstrap.min.js"></script>
+<!--Magnific popup js-->
+<script src="html/js/jquery.magnific-popup.min.js"></script>
+<!--jquery easing js-->
+<script src="html/js/jquery.easing.min.js"></script>
+<!--jquery ytplayer js-->
+<script src="html/js/jquery.mb.YTPlayer.min.js"></script>
+<!--wow js-->
+<script src="html/js/wow.min.js"></script>
+<!--owl carousel js-->
+<script src="html/js/owl.carousel.min.js"></script>
+<!--countdown js-->
+<script src="html/js/jquery.countdown.min.js"></script>
+<!--validator js-->
+<script src="html/js/validator.min.js"></script>
+<!--jquery.fitvids js-->
+<script src="html/js/jquery.fitvids.js"></script>
+<!--validator js-->
+<script src="html/js/carousel.js"></script>
+<!--custom js-->
+<script src="html/js/scripts45c1.js?Id=101"></script>
+
+<script src="cp/vendors/js/extensions/sweetalert2.all.min.js"></script>
+
+<script src="lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="lib/jquery-validation/dist/additional-methods.js"></script>
+<script src="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    
+    
+</body>
+</html>

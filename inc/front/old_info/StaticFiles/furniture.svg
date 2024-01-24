@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-furniture">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="furniture" clip-path="url(#clip-furniture)">
+    <g id="couch" transform="translate(1 -72)">
+      <path id="Path_2667" data-name="Path 2667" d="M20.711,226H19.422a1.289,1.289,0,0,0-1.289,1.289v3.867H3.867v-3.867A1.289,1.289,0,0,0,2.578,226H1.289a1.289,1.289,0,0,0,0,2.578v6.445H3.867l1.289-1.289H16.844l1.289,1.289h2.578v-6.445a1.289,1.289,0,0,0,0-2.578Z" transform="translate(0 -143.555)"/>
+      <path id="Path_2668" data-name="Path 2668" d="M120,286h11.688v1.289H120Z" transform="translate(-114.844 -200.977)"/>
+      <path id="Path_2669" data-name="Path 2669" d="M60,79.223v1.934a2.581,2.581,0,0,1,2.578,2.578H74.266a2.581,2.581,0,0,1,2.578-2.578V79.223A3.226,3.226,0,0,0,73.621,76h-10.4A3.226,3.226,0,0,0,60,79.223Zm11-1.556.911.911L71,79.49l-.911-.911Zm0,2.578.911.911L71,82.068l-.911-.911Zm-2.578-2.578.911.911-.911.911-.911-.911Zm0,2.578.911.911-.911.911-.911-.911Zm-2.578-2.578.911.911-.911.911-.954-.911Zm0,2.578.911.911-.911.911-.954-.911Z" transform="translate(-57.422 0)"/>
+    </g>
+  </g>
+</svg>

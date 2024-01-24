@@ -1,0 +1,499 @@
+﻿/*===================================*
+  07. PORTFOLIO SECTION
+*===================================*/
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope, .isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property: -moz-transform, opacity;
+        transition-property: transform, opacity;
+    }
+
+.portfolio_filter li {
+    display: inline-block;
+}
+
+    .portfolio_filter li a {
+        border-bottom: 1px solid transparent;
+        padding: 5px 25px;
+        display: block;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+
+        .portfolio_filter li a.current,
+        .portfolio_filter li a:hover {
+            border-color: #0e93d8;
+            color: #0e93d8;
+        }
+
+.filter_tab1 li a {
+    border: 1px solid #888888;
+    color: #888888;
+    border-radius: 40px;
+}
+
+    .filter_tab1 li a.current,
+    .filter_tab1 li a:hover {
+        background-color: #0e93d8;
+        border-color: #0e93d8;
+        color: #fff;
+    }
+
+.filter_tab2 li a {
+    border: 1px solid #888888;
+    color: #888888;
+}
+
+.filter_tab3,
+.filter_tab4 {
+    font-size: 0;
+}
+
+    .filter_tab3 li a,
+    .filter_tab4 li a {
+        border: 1px solid #888888;
+        color: #888888;
+        margin-left: -1px;
+    }
+
+    .filter_tab3 li:first-child a {
+        border-radius: 40px 0 0 40px;
+    }
+
+    .filter_tab3 li:last-child a {
+        border-radius: 0px 40px 40px 0px;
+    }
+
+    .filter_tab3 li a.current,
+    .filter_tab3 li a:hover,
+    .filter_tab4 li a.current,
+    .filter_tab4 li a:hover {
+        background-color: #0e93d8;
+        border-color: #0e93d8;
+        color: #fff;
+    }
+
+.filter_tab2 li a.current,
+.filter_tab2 li a:hover {
+    background-color: #0e93d8;
+    border-color: #0e93d8;
+    color: #fff;
+}
+
+.filter_tab5 li a {
+    border: 0;
+    background-color: #F4F4F4;
+    color: #7F8096;
+    border-radius: 4px;
+}
+
+    .filter_tab5 li a.current, .filter_tab5 li a:hover {
+        background-color: #0e93d8;
+        color: #fff;
+    }
+
+.filter_tab6 li a {
+    border: 1px solid #888888;
+    color: #7F8096;
+    border-radius: 4px;
+}
+
+    .filter_tab6 li a.current, .filter_tab6 li a:hover {
+        background-color: #0e93d8;
+        border-color: #0e93d8;
+        color: #fff;
+    }
+
+.portfolio_container,
+.portfolio_gallery,
+.blog_container,
+.shop_container {
+    list-style: none;
+}
+
+.gutter_small {
+    margin: 0 -7.5px -15px -7.5px;
+}
+
+.gutter_medium {
+    margin: 0 -15px -30px -15px;
+}
+
+.work_col2 > li {
+    width: 50%;
+    float: right;
+}
+
+.work_col3 > li {
+    width: 33.33%;
+    float: right;
+}
+
+.work_col4 > li {
+    width: 25%;
+    float: right;
+}
+
+.work_col5 > li {
+    width: 20%;
+    float: right;
+}
+
+.portfolio_item img,
+.portfolio-item img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important
+}
+
+.gutter_small > li {
+    padding: 0 7.5px 15px 7.5px;
+}
+
+.gutter_medium > li {
+    padding: 0px 15px 30px 15px;
+}
+
+.portfolio_content {
+    padding: 15px;
+}
+
+.portfolio_item {
+    overflow: hidden;
+    position: relative;
+}
+
+    .portfolio_item a {
+        display: block;
+        overflow: hidden;
+    }
+
+.portfolio_style1 .portfolio_content {
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.portfolio_style1 .portfolio_item::before {
+    background-color: rgba(14,147,216,0.80);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.portfolio_style1 .portfolio_item:hover .portfolio_content {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio_style2 .portfolio_content {
+    background-color: rgba(242, 156, 11, 0.7);
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_style1 .portfolio_item:hover:before,
+.portfolio_style2 .portfolio_item:hover .portfolio_content,
+.portfolio_style3 .portfolio_item:hover .portfolio_content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio_style2 .portfolio_item:hover img,
+.portfolio_style4 .portfolio_item:hover img {
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.portfolio_style3 .portfolio_content {
+    background-color: rgba(14,147,216,0.80);
+    bottom: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    right: 10px;
+    left: 10px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_style4 .portfolio_item .image_link {
+    display: block;
+    overflow: hidden;
+}
+
+.portfolio_style4 .portfolio_content {
+    background-color: #0e93d8;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_style5 .portfolio_content {
+    background-color: rgba(14,147,216,0.80);
+    bottom: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    right: 10px;
+    left: 10px;
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_style5 .portfolio_item:hover .portfolio_content {
+    opacity: 1;
+    visibility: visible;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.link_container a {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #0e93d8;
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 45px;
+    margin: 0 2px;
+    text-align: center;
+}
+
+    .link_container a .ion-ios-play {
+        position: relative;
+        left: 2px;
+    }
+
+    .link_container a:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+.link_container {
+    margin-bottom: 10px;
+}
+
+/*.portfolio_content h5 a,
+.portfolio_content p {
+    color: #fff;
+}*/
+
+.portfolio_content p {
+    margin: 0;
+    min-height: 50px;
+    overflow: hidden;
+    max-height: 50px;
+}
+
+.work_col5.portfolio_style3 .portfolio_content,
+.work_col5.portfolio_style5 .portfolio_content {
+    padding: 5px;
+    bottom: 5px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+}
+
+.work_col5.portfolio_style3 .link_container a,
+.work_col5.portfolio_style5 .link_container a {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.work_col5.portfolio_style3 .portfolio_content p,
+.work_col5.portfolio_style5 .portfolio_content p {
+    min-height: 40px;
+    max-height: 40px;
+    font-size: 14px;
+}
+
+.portfolio_slider.owl-carousel.owl-theme .owl-dots,
+.blog_post .owl-carousel.owl-theme .owl-dots {
+    margin: 0 !important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+}
+
+    .portfolio_slider.owl-carousel.owl-theme .owl-dots span,
+    .blog_post .owl-carousel.owl-theme .owl-dots span {
+        margin: 5px 2px;
+    }
+
+.portfolio_slider.owl-carousel {
+    z-index: inherit;
+}
+
+    .portfolio_slider.owl-carousel.owl-drag .owl-item {
+        overflow: hidden;
+    }
+
+.single_post .owl-carousel.owl-theme .owl-dots {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.portfolio-item .owl-carousel {
+    display: block;
+}
+
+    .portfolio-item .owl-carousel a:nth-child(1n+2) {
+        display: none;
+    }
+
+.loading {
+    background: url(../images/loading40fe.html?hg) center center no-repeat;
+    font-size: 0 !important;
+    background-color: #000 !important;
+    border: 0;
+    height: 48px;
+    width: 50px;
+}
+
+#load-more {
+    transition: none;
+}
+
+/*===================================*
+  07. END PORTFOLIO SECTION
+*===================================*/
+@media only screen and (max-width: 480px) {
+    .work_col4 > li {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .work_col4 > li {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .work_col4 > li{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .work_col4 > li {
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 1199px) {
+    .work_col4 > li {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .work_col4 > li {
+        width: 25%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-cleanliness">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="cleanliness" clip-path="url(#clip-cleanliness)">
+    <g id="cleaning" transform="translate(1 0.916)">
+      <path id="Path_2670" data-name="Path 2670" d="M301.824,6.635V.085h-1.289V6.638a3.085,3.085,0,0,1,1.289,0Z" transform="translate(-287.616 -0.001)"/>
+      <path id="Path_2671" data-name="Path 2671" d="M11.288,157.07a3.1,3.1,0,0,1,2.18-2.954H.846L1,157.131H11.288Z" transform="translate(-0.81 -147.411)"/>
+      <path id="Path_2672" data-name="Path 2672" d="M13.805,259.222a5.559,5.559,0,0,1,2.476-4.624v-.334H6.063l.577,11.075H17.1A7.333,7.333,0,0,1,13.805,259.222Z" transform="translate(-5.802 -243.255)"/>
+      <path id="Path_2673" data-name="Path 2673" d="M28.465,58.657h1.294V59.88H28.465Z" transform="translate(-27.241 -56.055)"/>
+      <path id="Path_2674" data-name="Path 2674" d="M28.465.084h1.294V1.3H28.465Z" transform="translate(-27.241 0)"/>
+      <path id="Path_2675" data-name="Path 2675" d="M58.572,28.476h1.223v1.3H58.572Z" transform="translate(-56.054 -27.172)"/>
+      <path id="Path_2676" data-name="Path 2676" d="M0,28.476H1.224v1.3H0Z" transform="translate(0 -27.172)"/>
+      <path id="Path_2677" data-name="Path 2677" d="M88.649,98.623h1.22v1.289h-1.22Z" transform="translate(-84.839 -94.304)"/>
+      <path id="Path_2678" data-name="Path 2678" d="M274.627,182.514a5.534,5.534,0,0,1,1.852.318v-1.066a1.845,1.845,0,1,0-3.69,0v1.061A5.536,5.536,0,0,1,274.627,182.514Z" transform="translate(-261.064 -172.107)"/>
+      <path id="Path_2679" data-name="Path 2679" d="M223.82,274.235v-.668a4.314,4.314,0,0,0-8.627,0,6.1,6.1,0,0,0,6.088,6.088h6.67v-1.29A4.135,4.135,0,0,1,223.82,274.235Z" transform="translate(-205.943 -257.599)"/>
+    </g>
+  </g>
+</svg>

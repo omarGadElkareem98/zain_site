@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-paint">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="paint" clip-path="url(#clip-paint)">
+    <g id="paint-brush" transform="translate(1 1)">
+      <path id="Path_2443" data-name="Path 2443" d="M129.731,2.22V0H116.5V2.3h-1.231V3.587H116.5v2.3h13.233V3.511l1.292.006V7.452h-6.009V8.743h7.3V2.231Z" transform="translate(-110.314)"/>
+      <path id="Path_2444" data-name="Path 2444" d="M243.654,173.354H246.6v2.8h-2.941Z" transform="translate(-233.184 -165.905)"/>
+      <path id="Path_2445" data-name="Path 2445" d="M0,314.7H1.813v7.472H0Z" transform="translate(0 -301.179)"/>
+      <path id="Path_2446" data-name="Path 2446" d="M83.5,198.113H78.319v-3.16l-2.878,2.226A4.308,4.308,0,0,0,73.5,200.1H72.243v7.472H73.3l2.933,1.005h7.253v-.013H83.5a1.3,1.3,0,1,0,0-2.608h-.014v-.005H83.5a1.3,1.3,0,1,0,0-2.608h-.014v-.006H83.5a1.3,1.3,0,1,0,0-2.608h-.014v-.006H83.5a1.3,1.3,0,0,0,0-2.609Z" transform="translate(-69.139 -186.576)"/>
+    </g>
+  </g>
+</svg>
